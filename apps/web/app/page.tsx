@@ -5,7 +5,7 @@ export default async function Home() {
 
   return (
     <div>
-      {user?.name} {user?.email} JENKINS
+      {user?.name} {user?.email} JENKINS SSL
     </div>
   );
 }
