@@ -5,7 +5,7 @@ export default async function Home() {
 
   return (
     <div>
-      {user?.name} {user?.email} JENKINS SSL
+      {user?.name} {user?.email} JENKINS SSL Webhook
     </div>
   );
 }
