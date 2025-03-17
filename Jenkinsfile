@@ -26,7 +26,7 @@ pipeline {
            steps {
                 sshagent(['mono_next_stage_server']) {
                     sh '''
-                        ssh -o StrictHostKeyChecking=no yogesh@34.93.164.73 << 'EOF'
+                        ssh -o StrictHostKeyChecking=no yogesh@stage.mono.yogeshkumar.me << 'EOF'
                             export PATH=/home/yogesh/.nvm/versions/node/v22.14.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/yogesh/.local/share/pnpm
 
                             if [ ! -d "next-mono-jenkins" ]; then
