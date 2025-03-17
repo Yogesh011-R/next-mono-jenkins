@@ -24,7 +24,7 @@ pipeline {
                 }
             }
             steps {
-                sshagent(['stage-server-credentials']) {
+                sshagent(['mono_next_stage_server']) {
                     sh '''
                         ssh -o StrictHostKeyChecking=no yogesh@34.93.164.73 "cd next-mono-jenkins/ && \
                         export PATH=/home/yogesh/.nvm/versions/node/v22.14.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/yogesh/.local/share/pnpm && \
